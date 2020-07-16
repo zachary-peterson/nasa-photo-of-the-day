@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import axios from 'axios'
 import App from "./App";
 import "./App.css";
 
 export default function Photo (props) {
-    const data = props;
+    const data = props.data
     console.log(data);
+    
     return (
         <div className="main-content">
         <div className="main-img-cont">
