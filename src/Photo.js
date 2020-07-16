@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import App from "./App";
 import "./App.css";
 
-function Photo (props) {
+export default function Photo (props) {
     const data = props;
     console.log(data);
     return (
@@ -18,5 +18,3 @@ function Photo (props) {
       </div>
     )
 }
-
-export default Photo

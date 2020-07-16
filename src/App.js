@@ -31,16 +31,16 @@ function App() {
   }, [])
 
   useEffect(() => {
-    axios.get()
+    axios.get(marsImages)
     .then(res => {
       console.log('Line 29 good: Second Data changed')
       setSecondData(res.data);
       console.log(secondData);
     })
     .catch(err => {
-
+      console.log('Error Line 41')
     })
-  })
+  }, [])
 
   return (
     <div className="App">
@@ -49,7 +49,7 @@ function App() {
         <button className="btn">Down</button>
       </div>
       <Photo data={data}/>
-      {/* <Second props={secondData}/> */}
+      <Second data={secondData}/>
     </div>
   );
 }
