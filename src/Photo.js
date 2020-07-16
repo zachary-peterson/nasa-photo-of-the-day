@@ -8,7 +8,7 @@ function Photo (props) {
     return (
         <div className="main-content">
         <div className="main-img-cont">
-          <img src={data.url}/>
+          <img src={data.url} alt={data.date}/>
         </div>
         <div className="main-text-cont">
             <p>Photo of the day</p>
